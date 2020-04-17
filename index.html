@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Author: Phan, Truong Son, 000824388-->
+		<title></title>
+		<link href="style.css" rel="stylesheet">
+		<link href="mobile.css" rel="stylesheet">
+		<link href="printer.css" rel="stylesheet" media="print">
+
+	</head>
+	
+	<body>
+		<h1>Mohawk Pizza Shop</h1>
+		
+		<div id="pizzapics">
+			<img src="images/smallpizza.png" alt="pizza" id="pizzalogo">
+		</div>	
+			
+		<div id="outline">
+
+			<div id="form">
+				<form method="POST"
+				name="comic-book-purchase-form"
+				action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+				<h2>Pizza Order Form</h2>
+				<fieldset>
+					<legend>Personal Info</legend>
+					
+					First Name
+					<input type="text" name="firstName" value="" size="30" maxlength="45">
+					<br><br>
+					Phone Number
+					<input type="text" name="phone" value="" size="25" maxlength="30" placeholder="(905) 575-1212">
+					<br><br>
+					
+					Delivery Option
+					<select name="deliOption">
+						<option>Pick up</option>
+						<option selected>Regular Delivery</option>
+						<option>Uber Eats</option>
+					</select>
+				</fieldset>	
+				
+				<fieldset class="order">
+					<legend>Pizza order</legend>
+					
+					<div class="container">
+					
+						<div class="container1">
+						<fieldset>
+							<legend>Size</legend>
+								<input type="radio" name="size" value="S" id="small">
+								<label for="small">Small</label>
+								<br>
+								
+								<input type="radio" name="size" value="M" id="medium" checked="checked">
+								<label for="medium">Medium</label>	
+								<br>
+								
+								<input type="radio" name="size" value="L" id="large">
+								<label for="large">Large</label>
+						</fieldset>					
+						</div>
+						
+						<div class="container2">
+						<fieldset>
+							<legend>Topping (choose multiple):</legend>
+							
+							<input type="checkbox" name="topping" value="pepperoni" id="pepperoni">
+							<label for="pepperoni">Pepperoni</label><br>
+
+							<input type="checkbox" name="topping" value="olive" id="olive">
+							<label for="olive">Olives</label><br>
+
+							<input type="checkbox" name="topping" value="mushrooms" id="mushrooms">
+							<label for="mushrooms">Mushrooms</label><br>
+							
+							<input type="checkbox" name="topping" value="peppers" id="peppers">
+							<label for="peppers">Peppers</label><br>		
+						
+						</div>
+					</div>
+				
+				</fieldset>
+				
+				<fieldset>
+					<legend>Please let us know if you have allergies or other considerations</legend>
+					
+<textarea name="medicalNotes" rows="5" cols="40">
+Allergies or other notes
+</textarea>									
+				</fieldset>
+				
+				
+				
+				<input type="submit" name="sendbutton" value="Order Pizza" class="button"> &nbsp;&nbsp;&nbsp;
+				<input type="reset" name="resetbutton" value="Clear Form" class="button">
+				<input type="hidden" name="sessionID" value="Mohawk Pizza 2018">				
+				
+				</form>
+			</div>
+			
+			<div id="table">
+				<table>
+					<colgroup>
+						<col class="area">
+						<col class="activities">
+					</colgroup>
+					
+					<caption>
+					April Events
+					</caption>
+					<thead>
+						<tr>
+							<th>Location</th>
+							<th>Morning</th>
+							<th>Lunch</th>
+							<th>Afternoon</th>
+							<th>Dinner</th>
+							<th>Evening</th>
+						</tr>					
+					</thead>
+					
+					<tbody>
+						<tr>
+							<th>Downtown</th>
+							<td rowspan="2">Flash Sale</td>
+							<td colspan="3">Shool Outreach</td>
+							<td rowspan="5">Cooking Class</td>
+						</tr>
+						
+						<tr>
+							<th>West End</th>
+							<td rowspan="2">Build a Pizza</td>
+							<td rowspan="2" colspan="2">Mascot Pictures</td>
+						</tr>	
+						
+						<tr>
+							<th>East End</th>
+							<td>Free Samples</td>
+						</tr>					
+
+						<tr>
+							<th>North End</th>
+							<td colspan="2">Flash Sale</td>
+							<td colspan="2">School Outreach</td>
+
+						</tr>					
+																											<tr>
+							<th>South End</th>
+							<td colspan="3">Suprise Coupon</td>
+							<td>Free Samples</td>
+						</tr>					
+					</tbody>	
+				</table>
+			</div>
+			
+		</div>
+		
+		<footer>
+			Mohawk Pizza Store &commat; 2018
+		</footer>
+	</body>
+	
+</html>

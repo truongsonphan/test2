@@ -1,0 +1,110 @@
+/* Phan, Truong Son , 000824388 */
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+			
+h1{
+	font-family: "MS comic sans", cursive;
+	text-align: center;
+	font-size: 2em;
+}
+
+#outline{
+	width: 80%;
+	margin-left: 10%;
+	height: 650px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#form{
+	flex-basis: 45%;
+	border: 3px dashed lightgrey;
+	height: 550px;
+}
+
+#table{
+	flex-basis: 45%;
+	height: 550px;
+}
+
+footer{
+	margin-left: 10%;
+	width: 80%;
+	border-top: 1px solid black;
+	text-align: center;
+	font-family: Calibri; 
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+thead th{
+	color: white;
+	background-color: darkred;
+	height: 70px;
+
+}
+
+tbody td, tbody th {
+	border: 1px solid black;
+	height: 70px;
+}
+
+.area{
+	background-color: #D3D3D3;
+	width: 15%;
+}
+
+.activities{
+	width: 17%;
+}
+
+tbody th{
+	font-weight: normal;	
+}
+
+caption{
+	caption-side: top;
+	text-align: center;
+}
+
+.container{
+	display: flex;
+}	
+
+.container1{
+	flex: 2;
+}
+
+.container2{
+	flex: 3;
+}
+
+.button{
+	border: 1px dashed black;
+	height: 80px;
+	width: 150px;
+	background-color: white;
+	text-decoration: underline;
+	font-weight: bold;	
+}
+
+#pizzalogo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width:90em){
+	#outline{
+		display: initial;
+	}		
+}
